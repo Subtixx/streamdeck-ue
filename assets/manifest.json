@@ -1,0 +1,49 @@
+{
+  "Actions": [
+    {
+      "Icon": "images/action1.icon",
+      "Name": "Numberdisplay Example (TS)",
+      "States": [
+        {
+          "Image": "images/action1.key.orange",
+          "TitleAlignment": "middle",
+          "FontSize": "15"
+        }
+      ],
+      "Controllers": ["Keypad", "Encoder"],
+      "Encoder": {
+        "layout": "$B1",
+        "Icon": "images/action1.key.orange",
+        "TriggerDescription": {
+          "Rotate": "Increase/Decrease the counter",
+          "Push": "Changes the step value",
+          "Touch": "Reset the counter"
+        }
+      },
+      "SupportedInMultiActions": false,
+      "Tooltip": "",
+      "UUID": "de.ithock.unreal.action"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "IT-Hock",
+  "CodePath": "plugin.html",
+  "PropertyInspectorPath": "propertyinspector.html",
+  "Name": "Unreal Engine",
+  "Description": "Example plugin to increment and display numbers using the streamdeck-ts-template",
+  "Icon": "images/pluginIcon",
+  "Version": "0.0.0-development",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "4.1"
+  }
+}
